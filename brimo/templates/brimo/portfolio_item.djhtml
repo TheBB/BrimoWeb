@@ -1,0 +1,24 @@
+{% extends "brimo/layout.djhtml" %}
+
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+{% endblock %}
+
+{% block js %}
+  <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+{% endblock %}
+
+{% block content %}
+  <h1 class="display-4">{{ jux.name }}</h1>
+
+  <div class="row justify-content-center">
+    <div class="w-60">
+      {{ jux.tag }}
+      <div class="text-right">
+        <a href="{{ jux.url }}">Full størrelse</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

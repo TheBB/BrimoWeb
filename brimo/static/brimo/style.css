@@ -5,4 +5,12 @@ h1 {
   margin-bottom: 0.4em;
 }
 
+a.jx-knightlab {
+  display: none;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
 /*# sourceMappingURL=style.css.map */

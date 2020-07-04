@@ -10,6 +10,7 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
+    {% block css %}{% endblock %}
     <link rel="stylesheet"
           href="{% static 'brimo/style.css' %}">
 
@@ -21,8 +22,8 @@
         <li class="nav-item {% if at_home %}active{% endif %}">
           <a class="nav-link" href="{% url 'home' %}">Hjem</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link">Portefølje</a>
+        <li class="nav-item {% if at_portfolio %}active{% endif %}">
+          <a class="nav-link" href="">Portefølje</a>
         </li>
         <li class="nav-item {% if at_about %}active{% endif %}">
           <a class="nav-link" href="{% url 'about' %}">Om oss</a>
@@ -49,5 +50,6 @@
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous">
     </script>
+    {% block js %}{% endblock %}
   </body>
 </html>
