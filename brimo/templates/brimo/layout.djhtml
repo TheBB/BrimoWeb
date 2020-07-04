@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="nb">
   <head>
@@ -8,11 +10,103 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="{% static 'brimo/style.css' %}">
 
     <title>Heisann</title>
   </head>
   <body>
-    <h1>Heisann</h1>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+      <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link">Hjem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Portefølje</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Om oss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-sm">
+      <h1 class="display-4">Heisann</h1>
+      <p>
+        Kongen gikk og drev på gulvet en stund, og snakket om at det
+        var ikke farlig med liket så lenge det var vær i ham, og annet
+        slikt som hadde rent gjennom munnen på Peik, og så fikk han
+        fram hornet, og til å tute og blåse; men enda han blåste alt
+        det han orket, både den dagen og den andre, så fikk han ikke
+        blåst liv i dem; de var døde og de ble døde, både dronningen og
+        datteren, og han måtte koste dem i jorden og holde gravøl
+        attpå.
+      </p>
+      <p>
+        Det tykte mannen var både væl og bra; og da det lei på
+        kvelden, fekk skreddern nøkkeln og gikk ne-i kverna - hu var
+        tom enda, for hu var nybygd - og så sette 'n seg midt på
+        golvet, tok krittet sitt og slo en stor ring rundt ikring seg,
+        og rundtom den ringen skreiv 'n fadervår, og så var 'n inte
+        redd, om så sjølve fanden skulle kommå. Da det var
+        høgstnattes, flaug døra opp med ett, og inn kom det så tjukt
+        med svarte katter at det yrde. Dom var inte seine før dom fekk
+        ei gryte på peisen og til å legge på under, så det tok til å
+        brase og frase i gryta, som om hun var full av kokandes bek og
+        tjære.
+      </p>
+      <p>
+        Da nå skrubben hadde ett opp hesten, tok Askeladden bikselet
+        og bandt i kjeften på den, og salen og la på ryggen av den, og
+        nå var skrubben blitt så sterk av det den hadde fått i seg, at
+        den satte avsted med kongssønnen som ingen ting; så fort hadde
+        han aldri ridd før.
+      </p>
+      <p>
+        Men så var det den gongen je ville tala om, som je såg 'n. Je
+        var nettopp vaksen, for det var året etter je hadde gått for
+        presten; det var en lørdagsefta, je hadde vøri i byen med
+        planker, og vøri på en liten kant om dagen. Straks je kom him,
+        gikk je sta og la meg. Da det lei utpå kvelden, sto je opp, og
+        da je hadde fått i meg litt mat - mye var det inte, for je var
+        ør og lei i hue ennå - så sa 'n far til meg: "Før du går bort
+        og legger deg igjen, får du gi Blakken nattefôret du, for de
+        andre er vel ute og renner etter jentene igjen."
+      </p>
+      <p>
+        Da trollene hørte dette, ble de redde og tok til å gi gode
+        ord. De ba nokså vakkert at han ville gi dem igjen øyet, så
+        skulle han få både gull og sølv og alt han ville ha. Ja, det
+        syntes gutten var nokså bra, men han ville ha gullet og sølvet
+        først, og så sa han at hvis en av dem ville gå hjem og hente
+        så mye gull og sølv at han og broren fikk posene sine fulle,
+        og gi dem to gode stålbuer attpå, så skulle de få øyet, men så
+        lenge ville han ha det.
+      </p>
+      <p>
+        "Ja, det skal være lett gjort," svarte smeden, og tok den
+        minste hammeren sin, la nøtten på smiestedet og slo til; men
+        den ville ikke i stykker. Så tok han en litt større hammer,
+        men den var heller ikke tung nok; han tok da en enda større
+        en, men den gjorde det heller ikke. Men så ble smeden sint, og
+        trev storslegga. "Jeg skal vel få deg i stykker -!" sa han og
+        slo til alt han orket; og så gikk nøtten i knas, så halve
+        smietaket fløy av, og det braket som om hytta skulle ramle
+        ned.
+      </p>
+      <p>
+        Peik hadde vondt for å være av med det, men siden det var
+        kongen, fikk han vel ta det. Og så fikk kongen det, og reiste
+        hjem det forteste han kunne, og han var ikke før kommet hjem,
+        før han måtte prøve det. Han tok på å krangle og kjekle med
+        dronningen og den eldste datteren, og de kjeklet igjen og sa
+        ham imot; men før de visste ordet av det, dro han ut kniven og
+        stakk dem i hjel, og de andre rømte stua, så redde ble de.
+      </p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
