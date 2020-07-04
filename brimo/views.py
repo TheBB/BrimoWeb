@@ -3,4 +3,10 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'brimo/layout.djhtml')
+    ctx = {'at_home': True}
+    return render(request, 'brimo/home.djhtml', ctx)
+
+
+def about(request):
+    ctx = {'at_about': True}
+    return render(request, 'brimo/about.djhtml', ctx)

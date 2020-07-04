@@ -1,0 +1,28 @@
+{% extends "brimo/layout.djhtml" %}
+
+{% block content %}
+  <h1 class="display-4">Om oss</h1>
+  <p>
+    Kongen gikk og drev på gulvet en stund, og snakket om at det
+    var ikke farlig med liket så lenge det var vær i ham, og annet
+    slikt som hadde rent gjennom munnen på Peik, og så fikk han
+    fram hornet, og til å tute og blåse; men enda han blåste alt
+    det han orket, både den dagen og den andre, så fikk han ikke
+    blåst liv i dem; de var døde og de ble døde, både dronningen og
+    datteren, og han måtte koste dem i jorden og holde gravøl
+    attpå.
+  </p>
+  <p>
+    Det tykte mannen var både væl og bra; og da det lei på
+    kvelden, fekk skreddern nøkkeln og gikk ne-i kverna - hu var
+    tom enda, for hu var nybygd - og så sette 'n seg midt på
+    golvet, tok krittet sitt og slo en stor ring rundt ikring seg,
+    og rundtom den ringen skreiv 'n fadervår, og så var 'n inte
+    redd, om så sjølve fanden skulle kommå. Da det var
+    høgstnattes, flaug døra opp med ett, og inn kom det så tjukt
+    med svarte katter at det yrde. Dom var inte seine før dom fekk
+    ei gryte på peisen og til å legge på under, så det tok til å
+    brase og frase i gryta, som om hun var full av kokandes bek og
+    tjære.
+  </p>
+{% endblock %}
