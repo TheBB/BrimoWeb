@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('hi there')
+    return render(request, 'brimo/layout.djhtml')
