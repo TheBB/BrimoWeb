@@ -1,7 +1,5 @@
 {% extends "brimo/layout.djhtml" %}
 
-{% load static %}
-
 {% block css %}
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
 {% endblock %}

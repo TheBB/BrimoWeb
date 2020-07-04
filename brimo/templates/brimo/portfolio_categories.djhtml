@@ -1,0 +1,12 @@
+{% extends "brimo/layout.djhtml" %}
+
+{% load markdownify %}
+
+{% block content %}
+  {% for item in categories %}
+    <h1 class="display-4">{{ item.name }}</h1>
+    <div class="row text-justify">
+      {{ item.short_description|markdownify }}
+    </div>
+  {% endfor %}
+{% endblock %}

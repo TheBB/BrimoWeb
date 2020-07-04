@@ -1,14 +1,19 @@
 from django.contrib import admin
 
-from .models import Image, Juxtaposition
+from . import models
 
 
-@admin.register(Image)
+@admin.register(models.Image)
 class ImageAdmin(admin.ModelAdmin):
     fields = ('name', 'imagefile', 'image_tag',)
     readonly_fields = ('image_tag',)
 
 
-@admin.register(Juxtaposition)
+@admin.register(models.Juxtaposition)
 class JuxtapositionAdmin(admin.ModelAdmin):
-    fields = ('name', 'before', 'after')
+    pass
+
+
+@admin.register(models.PortfolioCategory)
+class PortfolioCategoryAdmin(admin.ModelAdmin):
+    pass

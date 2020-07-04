@@ -19,16 +19,26 @@
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
       <ul class="navbar-nav ml-auto mr-auto">
-        <li class="nav-item {% if at_home %}active{% endif %}">
+        <li class="nav-item {% ifequal path.0 'home' %}active{% endifequal %}">
           <a class="nav-link" href="{% url 'home' %}">Hjem</a>
         </li>
-        <li class="nav-item {% if at_portfolio %}active{% endif %}">
-          <a class="nav-link" href="">Portefølje</a>
+        <li class="nav-item dropdown {% ifequal path.0 'portfolio' %}active{% endifequal %}">
+          <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-portfolio"
+             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Portefølje
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbar-dropdown-portfolio">
+            <a class="dropdown-item" href="{% url 'portfolio' %}">Alle</a>
+            <div class="dropdown-divider"></div>
+            {% for item in categories %}
+              <a class="dropdown-item" href="{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+          </div>
         </li>
-        <li class="nav-item {% if at_about %}active{% endif %}">
+        <li class="nav-item {% ifequal path.0 'about' %}active{% endifequal %}">
           <a class="nav-link" href="{% url 'about' %}">Om oss</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {% ifequal path.0 'contact' %}active{% endifequal %}">
           <a class="nav-link">Kontakt</a>
         </li>
       </ul>
